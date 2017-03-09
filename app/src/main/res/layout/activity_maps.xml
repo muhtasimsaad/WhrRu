@@ -1,0 +1,79 @@
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    ><![CDATA[
+
+
+    />
+
+
+
+
+
+
+    ]]>
+
+    <Button
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:text=" "
+        android:background= "@drawable/accounts"
+        android:id="@+id/accounts"
+        android:layout_marginBottom="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <Button
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:background= "@drawable/download"
+        android:id="@+id/updateButton"
+        android:layout_marginTop="57dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <Button
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:text=" "
+        android:id="@+id/search_buttom"
+        android:background= "@drawable/glass"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/updateButton"
+        android:layout_alignLeft="@+id/updateButton"
+        android:layout_alignStart="@+id/updateButton" />
+    <fragment
+
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.saad.whereareu.MapsActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+</fragment>
+
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="300px"
+            android:id="@+id/listView"
+        android:background="#c0c0c0"
+        android:layout_below="@+id/updateButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+
+</RelativeLayout>
